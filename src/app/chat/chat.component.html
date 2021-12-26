@@ -1,0 +1,30 @@
+<div>
+  <button (click)="startSharing()"  >Start sharing</button>
+  <br>
+  <button (click)="getLink()" >Get Shared link</button>
+<br>
+  <div class="data-container">
+    <div class="row">
+      <textarea type="text" id="form9" class="md-textarea form-control" mdbInput></textarea>
+      <label for="form7">User 1</label>
+    </div>
+  <br>
+
+    <div class="row">
+      <textarea type="text" id="form8" class="md-textarea form-control" mdbInput></textarea>
+      <label for="form8">User 2</label>
+    </div>
+    <br>
+
+    <div class="row">
+      <textarea type="text" id="form9" class="md-textarea form-control" mdbInput></textarea>
+      <label for="form9">User 3</label>
+    </div>
+    <button (click)="showData()" id="show-data-here">Show Data</button>
+
+    <span *ngIf="showThis" > Show this</span>
+    <br>
+  </div>
+
+
+</div>
