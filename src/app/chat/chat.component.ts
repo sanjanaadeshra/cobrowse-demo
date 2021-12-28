@@ -24,7 +24,10 @@ export class ChatComponent implements OnInit {
   }
 
   showData() {
-    this.showThis = true;
+    let userName = localStorage.getItem('userName');
+    if(userName === 'Sanjana') {
+      this.showThis = true;
+    }  
   }
 
   startSharing() {
